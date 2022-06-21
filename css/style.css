@@ -1,0 +1,91 @@
+:root{
+    --main-color: rgba(214, 46, 51, 0.6);
+}
+
+.bg-theme{
+    background-color: var(--main-color);
+}
+
+.home-section{
+    background-image: url(../images/home-img.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.home-effect{
+    top: 0;
+    left: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+.z-99{
+    z-index: 99;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.side-nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    transform: translateX(-100%);
+    width:15%;
+    background-color: rgb(65,70,88);
+}
+
+.nav-collapse{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(100%, -50%);
+}
+
+.close-button{
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.list-menu{
+    position: relative;
+    top: 10%;
+}
+
+ul li:hover{
+    color: rgba(214, 46, 51, 0.6);
+}
+
+.close-button .fa-x:hover{
+    color: rgba(214, 46, 51, 0.6) !important;
+}
+
+button:focus{
+    box-shadow: none !important;
+}
+
+.cursorPointer{
+    cursor: pointer;
+}
+
+.bg-grey{
+    background-color: rgb(204,204,204);
+}
+
+#singerOne, #singerTwo, #singerthree, #singerFour{
+    display: none;
+}
+
+.border-timer{
+    border: 2px solid white
+}
+
+.timer-bg{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
