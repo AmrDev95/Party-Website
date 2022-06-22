@@ -1,4 +1,18 @@
 let navToggler =0;
+let countDownDate = new Date("Jul 25, 2022 19:00:00").getTime();
+setInterval(() => {
+    let moment = new Date().getTime();
+    // getTime() returns time in milliseconds, so we have to convert it to seconds , minutes, hours, and days
+    let difference = countDownDate-moment;
+    let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    $('#daysCounter').html(days);
+    $('#hoursCounter').html(hours);
+    $('#minutesCounter').html(minutes);
+    $('#secondsCounter').html(seconds);
+}, 1000);
 
 $("#navCollapse").click(function(){
     let width = $("#sideNav").width();
