@@ -32,8 +32,8 @@ h1{
     left: 0px;
     height: 100vh;
     transform: translateX(-100%);
-    width:15%;
     background-color: rgb(65,70,88);
+    z-index: 99999999999999999;
 }
 
 .nav-collapse{
@@ -55,8 +55,8 @@ h1{
     top: 10%;
 }
 
-ul li:hover{
-    color: rgba(214, 46, 51, 0.6);
+.nav-item a:hover{
+    color: rgba(214, 46, 51, 0.6) !important;
 }
 
 .close-button .fa-x:hover{
@@ -90,8 +90,16 @@ button:focus{
 }
 
 .icons-footer{
-    width: 50px;
-    height: 50px;
-    background-color: teal;
+    width: 40px;
+    height: 40px;
+    border: rgb(122,127,137) solid 2px
+}
+
+.icons-footer:hover{
+    border: rgb(217,111,123) solid 2px;
+}
+
+.icons-footer:hover i{
+    color: rgb(217,111,123) !important;
 }
 

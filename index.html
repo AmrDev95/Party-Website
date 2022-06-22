@@ -11,7 +11,7 @@
 <body>
     
     <!-- Header section -->
-    <header class="w-100 vh-100 home-section position-relative d-flex justify-content-center align-items-center">
+    <header class="w-100 vh-100 home-section position-relative d-flex justify-content-center align-items-center" id="home">
         <div class="home-effect w-100 h-100 position-absolute"></div>
         <div class="text-center position-absolute z-99 text-white">
             <h1>Egyptian Party</h1>
@@ -23,8 +23,8 @@
     <!-- Create side navbar -->
     <nav class="side-nav" id="sideNav">
         <button class="nav-collapse d-flex align-items-center text-white btn bg-transparent" id="navCollapse">
-            <i class="fa-solid text-white fs-3 fa-bars my-auto"></i>
-            <h3 class="me-1 ms-2 fs-3 my-auto">Open</h3>
+            <i class="fa-solid text-white fs-3 fa-bars my-auto" id="bars"></i>
+            <h3 class="me-1 ms-2 fs-3 my-auto" id="aaa">Open</h3>
         </button>
         <!-- close button -->
         <div class="position-absolute close-button" id="closeButton">
@@ -33,18 +33,18 @@
         <!-- End of close button -->
 
         <!-- list for navigation -->
-        <ul class="list-unstyled text-white fs-3 list-menu ps-3">
-            <li class="my-4">Home</li>
-            <li class="my-4">Details</li>
-            <li class="my-4">Duration</li>
-            <li class="my-4">Contact</li>
+        <ul class="list-unstyled text-white fs-3 list-menu ps-3 pe-5 me-5">
+            <li  class="my-4 nav-item"><a href="#home" class="text-decoration-none text-white">Home</a></li>
+            <li class="my-4 nav-item"><a href="#details" class="text-decoration-none text-white">Details</a></li>
+            <li class="my-4 nav-item"><a href="#duration" class="text-decoration-none text-white">Duration</a></li>
+            <li class="my-4 nav-item"><a href="#contact" class="text-decoration-none text-white">Contact</a></li>
         </ul>
         <!-- End of navigation list -->
     </nav>
     <!-- End of side bar -->
 
     <!-- Singers section -->
-    <section class="my-5 pb-5 mx-auto w-50 text-white">
+    <section class="my-5 pb-5 mx-auto w-50 text-white" id="details">
         <h4 class="w-100 text-center bg-theme mb-0 py-2 cursorPointer" id="singerButton1">Singer one</h4>
         <div class="w-100 p-3 bg-grey text-black" id="singerOne">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -66,10 +66,10 @@
 
 
     <!-- Start of Timer section -->
-    <section class="w-100 my-5 d-flex justify-content-center align-items-center timer-bg position-relative">
+    <section class="w-100 my-5 d-flex justify-content-center align-items-center timer-bg position-relative" id="duration">
         <div class="home-effect w-100 h-100 position-absolute"></div>
         <div class="container mx-auto">
-            <div class="row my-5 py-5 position-relative text-white z-99 gx-5 gy-3">
+            <div class="row my-5 py-5 position-relative text-white z-99 gy-3">
                 <div class="col-lg-3 col-md-6 col text-center">
                     <div class="border-timer py-3">
                         <h2>Days</h2>
@@ -100,42 +100,46 @@
     <!-- End of timer section -->
 
     <!-- Start of join us section -->
-    <section class="container">
-        <h2>Join us</h2>
+    <section class="container mb-5" id="contact">
+        <h2 class="fs-1">JOIN US</h2>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         <div class="container-fluid">
-            <div class="row gy-3">
+            <div class="row gy-5">
                 <div class="col-md-6 ps-0 ms-0 pe-2">
-                    <h3>Contact info</h3>
-                    <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
+                    <h4>Contact info</h4>
+                    <p class="mt-3 text-muted">Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
 
-                    <table>
+                    <table class="table text-muted">
                         <tr>
-                            <td><i class="fa-solid fa-location-dot"></i></td>
+                            <td><i class="text-muted fa-solid fa-location-dot"></i></td>
                             <td>New Street 22545, Nexa Road, New York City, USA</td>
                         </tr>
 
                         <tr>
-                            <td><i class="fa-solid fa-envelope"></i></td>
-                            <td><a href="">hello@uigrid.com</a></td>
+                            <td><i class="text-muted fa-solid fa-envelope"></i></td>
+                            <td><a href="#" class="text-decoration-none text-danger">hello@uigrid.com</a></td>
                         </tr>
 
                         <tr>
-                            <td><i class="fa-solid fa-phone"></i></td>
+                            <td><i class="text-muted fa-solid fa-phone"></i></td>
                             <td>001-000-000-000</td>
                         </tr>
                     </table>
 
-                    <div class="d-flex">
-                        <div class="icons-footer mx-2"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icons-footer mx-2"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icons-footer mx-2"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icons-footer mx-2"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icons-footer mx-2"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="d-flex mt-4">
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook-f text-muted"></i></div>
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter text-muted"></i></div>
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-google-plus-g text-muted"></i></div>
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-github text-muted"></i></div>
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-behance text-muted"></i></div>
+                        <div class="icons-footer mx-2 d-flex justify-content-center align-items-center"><i class="fa-brands fa-dribbble text-muted"></i></div>
                     </div>
                 </div>
                 <div class="col-md-6 ps-2 ms-0 ">
-                    
+                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="email" class="form-control my-4" placeholder="Email">
+                    <textarea class="form-control mb-3" placeholder="Leave a comment here" id="messageText" style="height: 100px"></textarea>
+                    <p><span class="text-danger" id="charRemaining"></span> <span id="charText"> Characters remaining</span></p>
                 </div>
             </div>
         </div>

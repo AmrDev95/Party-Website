@@ -1,4 +1,8 @@
 let navToggler =0;
+let chars =100;
+
+let bars = document.getElementById('bars');
+$("#charRemaining").html(chars);
 let countDownDate = new Date("Jul 25, 2022 19:00:00").getTime();
 setInterval(() => {
     let moment = new Date().getTime();
@@ -67,4 +71,32 @@ $("#singerButton4").click(function(){
     $("#singerThree").slideUp(500);
     $("#singerOne").slideUp(500);
     console.log("1");
+});
+
+$("#messageText").keyup(function(){
+    let content = $("#messageText").val();
+    if(content.length<=100){
+        $("#charRemaining").html(`${100-content.length}`);
+        $("#charText").html(" Characters remaining");
+    }
+
+    else{
+        $("#charRemaining").html('You exceeded the limit !!');
+        $("#charText").html("");
+    }
+});
+
+$(window).scroll(function(){
+    // console.log($('.home-section').height()/2);
+    if($(window).scrollTop()>=$('.home-section').height()/2){
+        $('#aaa').css('color', 'rgb(0 ,0, 0)'); 
+        bars.classList.remove('text-white');
+        bars.classList.add('text-black');
+    }
+
+    else{
+        $('#aaa').css('color', 'rgb(255 , 255, 255)');
+        bars.classList.remove('text-black');
+        bars.classList.add('text-white');
+    }
 });
